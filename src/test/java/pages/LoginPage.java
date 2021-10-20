@@ -1,6 +1,6 @@
 package pages;
 
-import org.hamcrest.core.IsEqual;
+
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
