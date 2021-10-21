@@ -47,14 +47,10 @@ public class SearchPage extends FactoryPage {
           searchField.sendKeys("Flagman Mascot Feeder 5000");
           searchBtn.click();
 
-       // String productNameText = productName.getText();
-      //  String expected ="";
-
-        //Assert.assertEquals(productNameText, expected);
 
         Assert.assertTrue(productName.isDisplayed());
 
-        //a[@title='Flagman Mascot Feeder 5000']
+
 
     }
 
