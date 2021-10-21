@@ -23,5 +23,12 @@ public class HomePage extends FactoryPage {
 
     }
 
+    public SearchPage clickLoginBtnSearch(){
+        loginBtn.click();
+        return new SearchPage();
+    }
+
+
+
 
 }

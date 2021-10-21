@@ -36,6 +36,7 @@ public class LoginPage extends FactoryPage {
     private WebElement logoutBtn;
 
 
+
     public void clickLoginSendEmailPassword() {
 
 
@@ -73,6 +74,8 @@ public class LoginPage extends FactoryPage {
 
 
     }
+
+
 
 
 }
