@@ -36,7 +36,7 @@ public class LoginPage extends FactoryPage {
     private WebElement logoutBtn;
 
 
-    public LoginPage clickLoginSendEmailPassword() {
+    public void clickLoginSendEmailPassword() {
 
 
         email.sendKeys("test@email.com");
@@ -44,14 +44,11 @@ public class LoginPage extends FactoryPage {
         submitLogin.click();
 
 
-        return new LoginPage();
-
-
     }
 
-    public LoginPage clickLogout() {
+    public void clickLogout() {
         logoutBtn.click();
-        return new LoginPage();
+
     }
 
     public void userIsLogin() {
