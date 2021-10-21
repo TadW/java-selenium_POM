@@ -32,6 +32,9 @@ public class SearchPage extends FactoryPage {
     @FindBy(css = "img[title='Flagman Mascot Feeder 5000']")
     private WebElement productName;
 
+    @FindBy(xpath = "//*[@id=\"center_column\"]/h1/span[2]")
+    private WebElement resultSearch;
+
 
     public void clickLoginSearchPage() {
 
@@ -49,6 +52,14 @@ public class SearchPage extends FactoryPage {
 
 
         Assert.assertTrue(productName.isDisplayed());
+
+
+        String resultSearchText = resultSearch.getText();
+        String expected ="znaleziono 1 rezultat.";
+
+        Assert.assertEquals(resultSearchText, expected);
+
+        System.out.println(resultSearchText);
 
 
     }
