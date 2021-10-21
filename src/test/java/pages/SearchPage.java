@@ -24,7 +24,7 @@ public class SearchPage extends FactoryPage {
     private WebElement submitLogin;
 
     @FindBy(id = "search_query_top")
-   private WebElement searchField;
+    private WebElement searchField;
 
     @FindBy(css = "#search_block_top .btn.button-search")
     private WebElement searchBtn;
@@ -33,7 +33,7 @@ public class SearchPage extends FactoryPage {
     private WebElement productName;
 
 
-    public void clickLoginSearchPage(){
+    public void clickLoginSearchPage() {
 
         email.sendKeys("test@email.com");
         password.sendKeys("haslo");
@@ -42,14 +42,13 @@ public class SearchPage extends FactoryPage {
 
     }
 
-    public void typeSearchProduct(){
+    public void typeSearchProduct() {
 
-          searchField.sendKeys("Flagman Mascot Feeder 5000");
-          searchBtn.click();
+        searchField.sendKeys("Flagman Mascot Feeder 5000");
+        searchBtn.click();
 
 
         Assert.assertTrue(productName.isDisplayed());
-
 
 
     }

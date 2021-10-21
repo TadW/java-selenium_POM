@@ -3,13 +3,10 @@ package config;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
-
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import static config.ConfigDriverManager.getInstance;
 import static config.ConfigDriverManager.quit;
-import static org.openqa.selenium.devtools.v85.browser.Browser.close;
+
 
 
 public class Config {
